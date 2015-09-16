@@ -1,44 +1,18 @@
 package salarydemo;
+
 /**
-   An employee has a name and a mechanism for computing weekly pay.
-*/
-public class Employee
-{
-   private String name;
+ * An employee has a name and a mechanism for computing weekly pay.
+ */
+public class Employee {
 
-   /**
-      Constructs an employee with an empty name.
-   */
-   public Employee()
-   {
-      name = "";
-   }
+	private String name;
 
-   /**
-      Sets the name of this employee.
-      @param employee_name the new name 
-   */
-   public void setName(String employeeName)
-   {
-      name = employeeName;
-   }
+	public String getName() {
+		return this.name;
+	}
 
-   /**
-      Gets the name of this employee.
-      @return the name 
-   */
-   public String getName()
-   {
-      return name; 
-   }
+	public void setName(String name) {
+		this.name = name;
+	}
 
-   /**
-      Computes the pay for one week of work.
-      @param hoursWorked the number of hours worked in the week
-      @return the pay for the given number of hours
-   */
-   public double weeklyPay(int hoursWorked)
-   {
-      return 0; 
-   }
 }
